@@ -1,0 +1,9 @@
+{
+  "sql": {
+    "Server": "DESKTOP-D1P1DP8",
+    "Username": "sa",
+    "Database": "dbtest",
+    "Password": "Mysql@1234",
+    "Driver": "ODBC Driver 17 for SQL Server"
+  }
+}

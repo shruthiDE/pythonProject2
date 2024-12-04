@@ -1,0 +1,21 @@
+from sqlalchemy import create_engine
+import pandas as pd
+
+# Create a database engine (this is just an example for a PostgreSQL database)
+engine = create_engine('postgresql://user:password@host:port/dbname')
+
+# Write your SQL query
+sql_query = "SELECT * FROM your_table"
+
+# Fetch data directly into a DataFrame
+df = pd.read_sql_query(sql_query, engine)
+
+# View the DataFrame
+print(df)
+
+
+
+
+Key Points:
+pandas.read_sql_query() is a convenient method to execute SQL queries directly and fetch the results into a DataFrame.
+If you fetch data manually (e.g., using a cursor or fetching all results with fetchall()), you can manually convert it into a DataFrame by passing the data and column names to pd.DataFrame().
